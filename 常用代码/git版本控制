@@ -1,0 +1,26 @@
+ATOM 链接Github
+#1、github上创建新仓库
+#2、本地文件连接github
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/by-lee/test.git
+git push -u origin master
+
+
+Git提交分支被拒绝
+#1、拉取远程更新
+git pull
+
+#2、修改冲突，再次提交
+git add .
+git commit -m '解决合并冲突'
+
+#3、再次推送
+git push
+
+#创建新分支，不直接推送到master分支，或要求PR（pull request）审核
+#创建分支
+git checkout -b new-feature
+git push orgin new-feature
