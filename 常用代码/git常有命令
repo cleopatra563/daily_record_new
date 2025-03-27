@@ -1,0 +1,11 @@
+#git 命令
+git pull 拉取远程分支
+git add .
+git commit -m '' 提交修改注释
+git push  提交推送
+
+#创建新分支
+git checkout -b new-feature
+git push -u origin new-feature
+
+git push -u orgin main
