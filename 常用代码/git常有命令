@@ -6,6 +6,4 @@ git push  提交推送
 
 #创建新分支
 git checkout -b new-feature
-git push -u origin new-feature
-
-git push -u orgin main
+git push -u origin new-feature /*git push -u orgin main*/
