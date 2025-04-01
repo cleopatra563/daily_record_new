@@ -1,8 +1,3 @@
-写SQL时注意：
-表和字段，互相关系
-写意义的注释，有意义的列名称，有意义的表别名
-
-
 select 1 常与exists或者 not exists exists
 select * select column_name
 select 1 只检查行是否存在，节省开销
