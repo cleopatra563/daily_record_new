@@ -2,6 +2,9 @@ select 1 常与exists或者 not exists exists
 select * select column_name
 select 1 只检查行是否存在，节省开销
 
+
+select  1  from  createrole
+
 select role_id
 from table
 where not exists(

@@ -1,6 +1,6 @@
 lag() lead() 平替自连接 可以避免自连接带来的性能问题
 跨行比较高效工具
-
+窗口函数 rank() over(partition by  order by ) row_number() over(partition by order by )
 
 写SQL时注意：
 1、表和字段，互相关系
@@ -47,3 +47,4 @@ order by role_id,start_date;
  role1 2023-12-20-2 2023-12-18
  role1 2023-12-19-1 2023-12-18
  role1 2023-12-21-3 2023-12-18
+ 
