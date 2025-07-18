@@ -1,6 +1,7 @@
+构思-写代码-编译改bug-数据准确性验证
+
 case when status<> lag(status) over(order by time) then 1 else 0 end as is_change 状态打标
 sum(is_change) over(order by time) 分组计算求和
-
 lag() lead() 平替自连接 可以避免自连接带来的性能问题
 跨行比较高效工具
 窗口函数 rank() over(partition by  order by ) row_number() over(partition by order by )
@@ -25,7 +26,13 @@ group by 分组排序和排名->分配行号
 3、sql实现
 4、输出结果
 
-最佳实践与避坑指南
+with login_group()
+row_number() over(partition by role_id order by login_date) as grp
+consecutive_days (
+select role_id,min(login_date),max(login_date),grp,count(*)
+group by role_id,grp
+having count(*))
+
 
 /*连续天数中*/
 login_date - row_number() over(partition by order by "#event_time")
