@@ -1,4 +1,5 @@
-构思-写代码-编译改bug-准确性验证
+大脑构思-写代码-编译改bug-准确性验证
+日志对照-报表搭建-数据拉取-字段计算-分析内容
 
 case when status<> lag(status) over(order by time) then 1 else 0 end as is_change 状态打标
 sum(is_change) over(order by time) 分组计算求和
