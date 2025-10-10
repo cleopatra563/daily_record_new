@@ -7,11 +7,3 @@ git push  提交推送
 #创建新分支
 git checkout -b new-feature
 git push -u origin new-feature /*git push -u orgin main*/
-
-
-额外：剔除兑换码带来的资源
-1、资源产出、消耗、库存 金币  银币  体力  金币可以兑换成多少抽
-2、主线任务、成就任务、每日任务
-3、新手引导、主线引导
-4、各种关卡通关、滞留、占比，主要玩法
-5、等级分布、时间
